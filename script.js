@@ -23,3 +23,17 @@ function habilitar() {
 }
 
 agreement.addEventListener('click', habilitar);
+
+const textarea = document.getElementById('textarea');
+
+function contadorLetras(event) {
+  const spanContador = document.getElementById('counter');
+  const tamanhoDoTexto = textarea.value.split('').length;
+  let contador = 500 - tamanhoDoTexto;
+  spanContador.innerText = contador;
+  if (event.key === ' ') {
+    contador += 1;
+  }
+}
+
+textarea.addEventListener('keyup', contadorLetras);
