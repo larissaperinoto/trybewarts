@@ -33,7 +33,7 @@
  </select>
  </div>
  <label id="label-family">Qual sua família?</label>
- <label for="frontend"><input id="frontend" type="radio" name="family" value="Frontend">Frontend</label>
+ <label for="frontend"><input id="frontend" type="radio" name="family" value="Frontend" checked>Frontend</label>
  <label for="backend"><input id="backend" type="radio" name="family" value="Backend">Backend</label>
  <label for="fullstack"><input id="fullstack" type="radio" name="family" value="FullStack">FullStack</label>
 
@@ -46,7 +46,7 @@
  <label for="python"><input id="python" type="checkbox" value="Python">Python</label>
  <label id="label-rate">Como você avalia a Trybewarts?</label>
  <div class="container-flex"> 
- <label for="um"><input id="um" type="radio" name="rate" value="1">1</label>
+ <label for="um"><input id="um" type="radio" name="rate" value="1" checked>1</label>
  <label for="dois"><input id="dois" type="radio" name="rate" value="2">2</label>
  <label for="tres"><input id="tres" type="radio" name="rate" value="3">3</label>
  <label for="quatro"><input id="quatro" type="radio" name="rate" value="4">4</label>
@@ -59,8 +59,8 @@
  </div>  
  <label class="textarea">Deixe seu comentário:</label>
  <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
- <label id="label-infos" for="agreement"><input id="agreement" type="checkbox" value="HoFs">Você concorda com o uso das informações acima?</label>
- <button id="submit-btn" type="submit">Enviar</button> 
+ <label id="label-infos" for="agreement"><input id="agreement" type="checkbox"> Você concorda com o uso das informações acima?</label>
+ <button id="submit-btn" type="submit" disabled>Enviar</button> 
  </form>
  <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="segunda logo da Trybewarts">
  </main>

@@ -10,3 +10,16 @@ function fazerLogin() {
 
 const botaoEntrar = document.getElementById('botao-entrar');
 botaoEntrar.addEventListener('click', fazerLogin);
+
+const agreement = document.getElementById('agreement');
+
+function habilitar() {
+  const botaoEnviar = document.getElementById('submit-btn');
+  if (agreement.checked === true) {
+    botaoEnviar.disabled = false;
+  } else {
+    botaoEnviar.disabled = true;
+  }
+}
+
+agreement.addEventListener('click', habilitar);
