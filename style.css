@@ -23,6 +23,6 @@ main {
   height: 500px;
 }
 
-#container-flex {
+.container-flex {
   display: flex;
 }
