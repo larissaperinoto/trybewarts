@@ -27,3 +27,11 @@ main {
   display: flex;
 }
 
+.container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}

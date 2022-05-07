@@ -18,11 +18,14 @@
     </form>
  </header>
  <main>
+<section>
  <form id="evaluation-form">
+
  <div class="container-flex">    
  <input id="input-name" type="text" placeholder="Nome">    
  <input id="input-lastname" type="text" placeholder="Sobrenome">
  </div>
+
  <div class="container-flex"> 
  <input id="input-email" type="email" placeholder="Email">
  <select name="house" id="house">
@@ -32,37 +35,50 @@
  <option id="pytherina-house" value="Pytherina">Pytherina</option>
  </select>
  </div>
- <label id="label-family">Qual sua família?</label>
- <label for="frontend"><input id="frontend" type="radio" name="family" value="Frontend" checked>Frontend</label>
- <label for="backend"><input id="backend" type="radio" name="family" value="Backend">Backend</label>
- <label for="fullstack"><input id="fullstack" type="radio" name="family" value="FullStack">FullStack</label>
 
+ <div class="container-column">
+ <label id="label-family">Qual sua família?</label>
+ <label for="frontend"><input id="frontend" class="familia" type="radio" name="family" value="Frontend" checked>Frontend</label>
+ <label for="backend"><input id="backend" class="familia"  type="radio" name="family" value="Backend">Backend</label>
+ <label for="fullstack"><input id="fullstack" class="familia"  type="radio" name="family" value="FullStack">FullStack</label>
+</div>
+
+<div class="container-column">
  <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
- <label for="hofs"><input id="hofs" type="checkbox" value="HoFs">HoFs</label>
- <label for="jest"><input id="jest" type="checkbox" value="Jest">Jest</label>
- <label for="promises"><input id="promises" type="checkbox" value="Promises">Promises</label>
- <label for="react"><input id="react" type="checkbox" value="React">React</label>
- <label for="sql"><input id="sql" type="checkbox" value="SQL">SQL</label>
- <label for="python"><input id="python" type="checkbox" value="Python">Python</label>
+ <label for="hofs"><input id="hofs" class="subject" type="checkbox" value="HoFs">HoFs</label>
+ <label for="jest"><input id="jest" class="subject" type="checkbox" value="Jest">Jest</label>
+ <label for="promises"><input id="promises" class="subject" type="checkbox" value="Promises">Promises</label>
+ <label for="react"><input id="react" class="subject" type="checkbox" value="React">React</label>
+ <label for="sql"><input id="sql" class="subject" type="checkbox" value="SQL">SQL</label>
+ <label for="python"><input id="python"class="subject" type="checkbox" value="Python">Python</label>
+</div>
+
+<div>
  <label id="label-rate">Como você avalia a Trybewarts?</label>
  <div class="container-flex"> 
- <label for="um"><input id="um" type="radio" name="rate" value="1" checked>1</label>
- <label for="dois"><input id="dois" type="radio" name="rate" value="2">2</label>
- <label for="tres"><input id="tres" type="radio" name="rate" value="3">3</label>
- <label for="quatro"><input id="quatro" type="radio" name="rate" value="4">4</label>
- <label for="cinco"><input id="cinco" type="radio" name="rate" value="5">5</label>
- <label for="seis"><input id="seis" type="radio" name="rate" value="6">6</label>
- <label for="sete"><input id="sete" type="radio" name="rate" value="7">7</label>
- <label for="oito"><input id="oito" type="radio" name="rate" value="8">8</label>
- <label for="nove"><input id="nove" type="radio" name="rate" value="9">9</label>
- <label for="dez"><input id="dez" type="radio" name="rate" value="10">10</label>
- </div>  
+ <label for="um"><input id="um" class="avaliacao" type="radio" name="rate" value="1" checked>1</label>
+ <label for="dois"><input id="dois" class="avaliacao" type="radio" name="rate" value="2">2</label>
+ <label for="tres"><input id="tres" class="avaliacao" type="radio" name="rate" value="3">3</label>
+ <label for="quatro"><input id="quatro" class="avaliacao" type="radio" name="rate" value="4">4</label>
+ <label for="cinco"><input id="cinco" class="avaliacao" type="radio" name="rate" value="5">5</label>
+ <label for="seis"><input id="seis" class="avaliacao" type="radio" name="rate" value="6">6</label>
+ <label for="sete"><input id="sete" class="avaliacao" class="avaliacao" type="radio" name="rate" value="7">7</label>
+ <label for="oito"><input id="oito" class="avaliacao" type="radio" name="rate" value="8">8</label>
+ <label for="nove"><input id="nove" class="avaliacao" type="radio" name="rate" value="9">9</label>
+ <label for="dez"><input id="dez" class="avaliacao" type="radio" name="rate" value="10">10</label>
+ </div> 
+</div> 
+
+<div class="container-column">
  <label class="textarea">Deixe seu comentário:</label>
  <span id="counter">500</span>
  <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
  <label id="label-infos" for="agreement"><input id="agreement" type="checkbox"> Você concorda com o uso das informações acima?</label>
- <button id="submit-btn" type="submit" disabled>Enviar</button> 
+</div>
  </form>
+ 
+ <button id="submit-btn" type="submit" disabled>Enviar</button> 
+</section>
  <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="segunda logo da Trybewarts">
  </main>
  <footer><p>Direitos reservados à Trybewarts©</p></footer>
