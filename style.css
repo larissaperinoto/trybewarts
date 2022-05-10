@@ -1,30 +1,157 @@
+* {
+  margin: 0px;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  background-image: url(https://chasingdaisiesblog.com/wp-content/uploads/2020/09/b6b7983b4aca99f6740ee5907980b35c-512x910.jpg);
+  background-size:contain;
+  background-repeat: repeat-x;
+
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  top: 0px;
+  box-shadow: 0px 1px 1px rgba(56, 56, 56, 0.613);
+}
+
+.trybewarts-header-logo{
+  width: 100px;
+  margin-left: 20px;
+}
+
+#trybewarts-header-title {
+  font-size: 40px;
+  color: white;
+  text-shadow:0px 1px 2px black;
 }
 
 .trybewarts-login {
   display: flex;
 }
 
+.trybewarts-login input {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: rgba(65, 64, 62, 0.6);
+  margin: 1px;
+  border: none;
+  box-shadow: 0px 1px 1px black;
+}
+
+.trybewarts-login input::placeholder {
+  color: white;
+}
+
+.trybewarts-login button {
+  border-radius: 5px;
+  padding: 0px 20px;
+  margin: 0px 10px 0px 2px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 1px 1px black;
+  font-weight: bold;
+}
+
 main {
   display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+main section {
+  background-color: rgba(0, 0, 0, 0.483);
+  color: rgba(255, 253, 253, 0.928);
+  text-shadow: 0px 1px 1px black;
+  padding: 20px 30px;
+  border-radius: 20px;
+  font-size: 17px;
+}
+
+.title-form {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
 #evaluation-form {
   display: flex;
-  width: 675px;
+  width: 675px; 
   flex-direction: column;
+  border-radius: 20px;
+  line-height: 25px;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
+#evaluation-form div {
+  margin-bottom: 10px;
 }
 
 .container-flex {
   display: flex;
+}
+
+#input-name, #input-lastname, #input-email {
+  padding: 8px 50px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  box-shadow: 0px 1px 1px black;
+  background-color: rgba(255, 255, 255, 0.791);
+}
+
+#input-name {
+  width: 30%;
+}
+
+#input-lastname {
+  width: 70%;
+}
+
+#input-email {
+  width: 60%;
+}
+
+.house {
+  align-self: center;
+  width: 40%;
+  margin-left: 25px;
+}
+
+#house {
+ text-align: center;
+ border-radius: 5px;
+ background-color: white;
+ box-shadow: 0px 1px 1px black;
+ padding: 8px;
+ width: 76%;
+ border: none;
+ margin-left: 5px;
+ color: rgba(0, 0, 0, 0.725);
+}
+
+.container-flex label {
+  margin: 5px;
+}
+
+#textarea {
+  resize: none;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 1px 1px black;  
+  margin-top: 3px;
+  background-color: rgba(255, 255, 255, 0.88);
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  align-self: flex-start;
 }
 
 .container-column {
@@ -32,6 +159,41 @@ main {
   flex-direction: column;
 }
 
+.textarea {
+  font-size: 18px;
+}
+
+#counter {
+  float: right;
+  padding: 1px 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .hide {
   display: none;
+}
+
+.btn-enviar {
+  display: flex;
+}
+
+#submit-btn {
+  padding: 10px 40px;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color:  rgb(50, 167, 145);
+  border: none;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  font-size: 16px;
+}
+
+footer {
+  margin: 20px 0px 2px;
+  padding: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.629);
+  background-color: rgba(34, 33, 33, 0.892);
 }

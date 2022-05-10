@@ -96,3 +96,4 @@ function escondeForms() {
 }
 
 botaoEnviar.addEventListener('click', escondeForms);
+ 
