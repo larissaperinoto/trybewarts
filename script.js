@@ -48,8 +48,8 @@ const conteudo = document.getElementsByClassName('subject');
 
 function inputFamilia() {
   for (let item = 0; item < familia.length; item += 1) {
-    if (item.checked === true) {
-      const valorFamilia = item.value;
+    if (familia[item].checked === true) {
+      const valorFamilia = familia[item].value;
       return valorFamilia;
     }
   }
@@ -58,8 +58,8 @@ function inputFamilia() {
 function inputConteudo() {
   const valorConteudo = [];
   for (let item = 0; item < conteudo.length; item += 1) {
-    if (item.checked === true) {
-      valorConteudo.push(` ${item.value}`);
+    if (conteudo[item].checked === true) {
+      valorConteudo.push(` ${conteudo[item].value}`);
     }
   }
   return valorConteudo;
@@ -67,8 +67,8 @@ function inputConteudo() {
 
 function inputAvaliacao() {
   for (let item = 0; item < avaliacao.length; item += 1) {
-    if (item.checked === true) {
-      const valorAvaliacao = item.value;
+    if (avaliacao[item].checked === true) {
+      const valorAvaliacao = avaliacao[item].value;
       return valorAvaliacao;
     }
   }
