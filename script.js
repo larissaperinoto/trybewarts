@@ -90,7 +90,8 @@ function dadosUsuario() {
 function escondeForms() {
   const conteudoForms = document.getElementsByTagName('div');
   for (let element = 0; element < conteudoForms.length; element += 1) {
-    element.classList.add('hide');
+    conteudoForms[element].classList.add('hide');
+    botaoEnviar.classList.add('hide');
   }
   dadosUsuario();
 }
