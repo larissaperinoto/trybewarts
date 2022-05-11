@@ -94,6 +94,4 @@ function escondeForms() {
   }
   dadosUsuario();
 }
-
 botaoEnviar.addEventListener('click', escondeForms);
- 
