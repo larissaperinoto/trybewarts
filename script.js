@@ -47,7 +47,7 @@ const familia = document.getElementsByClassName('familia');
 const conteudo = document.getElementsByClassName('subject');
 
 function inputFamilia() {
-  for (const item of familia) {
+  for (let item = 0; item < familia.length; item += 1) {
     if (item.checked === true) {
       const valorFamilia = item.value;
       return valorFamilia;
@@ -57,7 +57,7 @@ function inputFamilia() {
 
 function inputConteudo() {
   const valorConteudo = [];
-  for (const item of conteudo) {
+  for (let item = 0; item < conteudo.length; item += 1) {
     if (item.checked === true) {
       valorConteudo.push(` ${item.value}`);
     }
@@ -66,7 +66,7 @@ function inputConteudo() {
 }
 
 function inputAvaliacao() {
-  for (const item of avaliacao) {
+  for (let item = 0; item < avaliacao.length; item += 1) {
     if (item.checked === true) {
       const valorAvaliacao = item.value;
       return valorAvaliacao;
@@ -89,7 +89,7 @@ function dadosUsuario() {
 
 function escondeForms() {
   const conteudoForms = document.getElementsByTagName('div');
-  for (const element of conteudoForms) {
+  for (let element = 0; element < conteudoForms.length; element += 1) {
     element.classList.add('hide');
   }
   dadosUsuario();
